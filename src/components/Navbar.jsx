@@ -52,7 +52,7 @@ const Navbar = () => {
           </div>
         </div>
         {menux && (
-          <div className="fixed right-0 z-20 bg-neutral-900 w-full p-12 flex flex-col justify-center items-center lg:hidden">
+          <div className="fixed right-0 z-20 bg-neutral-900 w-full p-12 flex flex-col justify-center items-center lg:hidden sidebar ">
             <ul>
               {navItems.map((item, index) => (
                 <li key={index} className="py-3 text-center">
