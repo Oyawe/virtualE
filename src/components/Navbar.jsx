@@ -19,16 +19,24 @@ const Navbar = () => {
             <span className="text-xl tracking-tight">VirtualR</span>
           </div>
           {/* nav links */}
-          <ul className="hidden lg:flex ml-14 space-x-12">
+          <ul className="hidden lg:flex ml-14 space-x-12 tracking-tight">
             {navItems.map((item, index) => (
               <li key={index}>
-                <a href={item.href}>{item.label}</a>
+                <a
+                  href={item.href}
+                  className="hover:text-orange-500 ease-in duration-150"
+                >
+                  {item.label}
+                </a>
               </li>
             ))}
           </ul>
           {/* other nav links */}
           <div className="hidden lg:flex justify-center space-x-12 items-center">
-            <a href="#" className="py-2 px-3 border rounded-md">
+            <a
+              href="#"
+              className="py-2 px-3 border rounded-md hover:border-orange-500 ease-in duration-150"
+            >
               Sign In
             </a>
             <a
@@ -53,7 +61,7 @@ const Navbar = () => {
               ))}
             </ul>
             <div className="flex flex-col">
-              <a href="#" className="py-2 px-3 text-center border rounded-md">
+              <a href="#" className="py-2 px-3 text-center rounded-md border">
                 Sign In
               </a>
               <a
