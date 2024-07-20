@@ -30,12 +30,12 @@ const Hero = () => {
           Documentation
         </a>
       </div>
-      <div className="flex mt-10 justify-center">
+      <div className="flex flex-col lg:flex-row mt-10 justify-center">
         <video
           autoPlay
           loop
           muted
-          className="rounded-lg w-1/2 border border-orange-700 shadow shadow-orange-400 mx-2 my-4 "
+          className="relative right-2 rounded-lg w-full lg:w-1/2 border border-orange-700 shadow shadow-orange-400 mx-2 my-4 "
         >
           <source src={video2} type="video/mp4" />
           Your browser does not support this video.
@@ -44,7 +44,7 @@ const Hero = () => {
           autoPlay
           loop
           muted
-          className="rounded-lg w-1/2 border border-orange-700 shadow shadow-orange-400 mx-2 my-4 "
+          className="relative right-2 rounded-lg w-full lg:w-1/2 border border-orange-700 shadow shadow-orange-400 mx-2 my-4 "
         >
           <source src={video1} type="video/mp4" />
           Your browser does not support this video.
