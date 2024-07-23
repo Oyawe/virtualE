@@ -1,5 +1,5 @@
 import { Menu, X } from "lucide-react";
-import logo from "../assets/logo.png";
+import logo from "../assets/logo2.png";
 import { navItems } from "../constants";
 import { motion } from "framer-motion";
 import { navVariants } from "../utils/motion";
@@ -24,7 +24,7 @@ const Navbar = () => {
             {/* nav logo */}
             <div className="flex items-center flex-shrink-0">
               <img className="h-10 w-10 mr-2" src={logo} alt="logo" />
-              <span className="text-xl tracking-tight">VirtualR</span>
+              <span className="text-xl tracking-tight">VirtualE</span>
             </div>
             {/* nav links */}
             <ul className="hidden lg:flex ml-14 space-x-12 tracking-tight">
@@ -32,7 +32,7 @@ const Navbar = () => {
                 <li key={index}>
                   <a
                     href={item.href}
-                    className="hover:text-orange-500 ease-in duration-150"
+                    className="hover:text-gray-400 ease-in duration-150"
                   >
                     {item.label}
                   </a>
@@ -43,13 +43,13 @@ const Navbar = () => {
             <div className="hidden lg:flex justify-center space-x-12 items-center">
               <a
                 href="#"
-                className="py-2 px-3 border rounded-md hover:border-orange-500 ease-in duration-150"
+                className="py-2 px-3 border rounded-md hover:border-gray-600 ease-in duration-150"
               >
                 Sign In
               </a>
               <a
                 href="#"
-                className="bg-gradient-to-r from-orange-500 to-orange-800 py-2 px-3 rounded-md"
+                className="bg-gradient-to-r from-gray-500 to-gray-800 py-2 px-3 rounded-md"
               >
                 Create an account
               </a>
@@ -74,7 +74,7 @@ const Navbar = () => {
                 </a>
                 <a
                   href="#"
-                  className="bg-gradient-to-r from-orange-500 to-orange-800 py-2 px-3 mt-4 rounded-md"
+                  className="bg-gradient-to-r from-gray-500 to-gray-800 py-2 px-3 mt-4 rounded-md"
                 >
                   Create an account
                 </a>

@@ -60,7 +60,7 @@ const Footer = () => {
         </div>
         <div className="w-full flex justify-center items-center md:flex-row flex-col pt-6 border-t border-neutral-700">
           <p className="font-normal text-center text-[16px] tracking-tight text-neutral-200">
-            Copyright Ⓒ 2024 VirtualR. All Rights Reserved.
+            Copyright Ⓒ 2024 VirtualE. All Rights Reserved.
           </p>
         </div>
       </footer>

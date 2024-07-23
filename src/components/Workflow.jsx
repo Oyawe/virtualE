@@ -21,7 +21,7 @@ const Workflow = () => {
           >
             <h2 className="text-3xl sm:text-5xl lg:text-6xl mt-10 lg:mt-20 tracking-wide">
               Accelerate your
-              <span className="bg-gradient-to-r from-orange-500 to-orange-800 text-transparent bg-clip-text">
+              <span className="bg-gradient-to-r from-gray-400 to-gray-600 text-transparent bg-clip-text">
                 {" "}
                 coding workflow.
               </span>
@@ -43,7 +43,7 @@ const Workflow = () => {
                 variants={fadeIn("left", "spring", 0.2, 1.5)}
               >
                 <div className="flex">
-                  <div className="text-green-400 mx-6 h-10 w-10 p-2 bg-neutral-900 justify-center items-center rounded-full">
+                  <div className="text-green-700 mx-6 h-10 w-10 p-2 bg-neutral-900 justify-center items-center rounded-full">
                     <CheckCircle />
                   </div>
                   <div>
