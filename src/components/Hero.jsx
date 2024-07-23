@@ -1,7 +1,7 @@
 import video1 from "../assets/video1.mp4";
 import video2 from "../assets/video2.mp4";
 import { motion } from "framer-motion";
-import { staggerContainer, textVariant } from "../utils/motion";
+import { fadeIn, staggerContainer, textVariant } from "../utils/motion";
 
 const Hero = () => {
   return (
@@ -9,7 +9,7 @@ const Hero = () => {
       variants={staggerContainer}
       initial="hidden"
       whileInView="show"
-      viewport={{ once: false, amount: 0.25 }}
+      viewport={{ once: true, amount: 0.25 }}
     >
       <div className="flex flex-col items-center mt-6 lg:mt-20 ">
         <motion.h1 variants={textVariant(1.1)}>
@@ -28,40 +28,44 @@ const Hero = () => {
             imagination into immersive reality!
           </p>
         </motion.p>
-        <div className="flex justify-center my-10">
-          <a
-            href="#"
-            className="bg-gradient-to-r from-orange-500 to-orange-800 py-3 px-4 mx-3 rounded-md"
-          >
-            Start for free
-          </a>
-          <a
-            href="#"
-            className="py-3 px-4 mx-3 border hover:border-orange-500 ease-in duration-150 rounded-md"
-          >
-            Documentation
-          </a>
-        </div>
-        <div className="flex flex-col lg:flex-row mt-10 justify-center">
-          <video
-            autoPlay
-            loop
-            muted
-            className="relative right-2 rounded-lg w-full lg:w-1/2 border border-orange-700 shadow shadow-orange-400 mx-2 my-4 "
-          >
-            <source src={video2} type="video/mp4" />
-            Your browser does not support this video.
-          </video>
-          <video
-            autoPlay
-            loop
-            muted
-            className="relative right-2 rounded-lg w-full lg:w-1/2 border border-orange-700 shadow shadow-orange-400 mx-2 my-4 "
-          >
-            <source src={video1} type="video/mp4" />
-            Your browser does not support this video.
-          </video>
-        </div>
+        <motion.div variants={textVariant(0.7)}>
+          <div className="flex justify-center my-10">
+            <a
+              href="#"
+              className="bg-gradient-to-r from-orange-500 to-orange-800 py-3 px-4 mx-3 rounded-md"
+            >
+              Start for free
+            </a>
+            <a
+              href="#"
+              className="py-3 px-4 mx-3 border hover:border-orange-500 ease-in duration-150 rounded-md"
+            >
+              Documentation
+            </a>
+          </div>
+        </motion.div>
+        <motion.div variants={fadeIn("down", "spring", 0.2, 1.5)}>
+          <div className="flex flex-col lg:flex-row mt-10 justify-center">
+            <video
+              autoPlay
+              loop
+              muted
+              className="relative right-2 rounded-lg w-full lg:w-1/2 border border-orange-700 shadow shadow-orange-400 mx-2 my-4 "
+            >
+              <source src={video2} type="video/mp4" />
+              Your browser does not support this video.
+            </video>
+            <video
+              autoPlay
+              loop
+              muted
+              className="relative right-2 rounded-lg w-full lg:w-1/2 border border-orange-700 shadow shadow-orange-400 mx-2 my-4 "
+            >
+              <source src={video1} type="video/mp4" />
+              Your browser does not support this video.
+            </video>
+          </div>
+        </motion.div>
       </div>
     </motion.div>
   );

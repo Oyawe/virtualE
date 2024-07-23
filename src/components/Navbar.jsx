@@ -12,8 +12,13 @@ const Navbar = () => {
     setMenux(!menux);
   };
   return (
-    <motion.nav variants={navVariants} initial="hidden" whileInView="show">
-      <nav className="sticky top-0 z-50 py-3 backdrop-blur-lg border-b border-neutral-700/80">
+    <motion.nav
+      variants={navVariants}
+      initial="hidden"
+      whileInView="show"
+      className="sticky top-0 z-50 py-3 backdrop-blur-lg border-b border-neutral-700/80"
+    >
+      <nav>
         <div className="container px-4 mx-auto relative text-sm">
           <div className="flex justify-between items-center">
             {/* nav logo */}
