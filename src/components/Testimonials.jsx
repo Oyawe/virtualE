@@ -9,10 +9,11 @@ const Testimonials = () => {
       initial="hidden"
       whileInView="show"
       viewport={{ once: false, amount: 0.25 }}
+      id="testimonials"
     >
       <div className="mt-20 tracking-wide">
         <motion.h2 variants={textVariant2} initial="hidden" whileInView="show">
-          <h2 className="text-center text-3xl sm:text-5xl lg:text-6xl my-10 lg:my-20">
+          <h2 className="my-10 text-3xl text-center sm:text-5xl lg:text-6xl lg:my-20">
             What People are saying
           </h2>
         </motion.h2>
@@ -21,22 +22,22 @@ const Testimonials = () => {
             <motion.div
               variants={fadeIn("up", "tween", 0.2, 1.5)}
               key={index}
-              className="flex w-full sm:w-1/2 lg:w-1/3 px-4 py-2"
+              className="flex w-full px-4 py-2 sm:w-1/2 lg:w-1/3"
             >
               <div>
-                <div className="bg-neutral rounded-md p-6 text-md border border-neutral-800 font-thin">
+                <div className="p-6 font-thin border rounded-md bg-neutral text-md border-neutral-800">
                   <div>
                     <p>{testy.text}</p>
                   </div>
-                  <div className="flex mt-8 justify-start items-center">
+                  <div className="flex items-center justify-start mt-8">
                     <img
-                      className="w-12 h-12 mr-6 rounded-full border border-neutral-500"
+                      className="w-12 h-12 mr-6 border rounded-full border-neutral-500"
                       src={testy.image}
                       alt={testy.user}
                     />
                     <div>
                       <h6>{testy.user}</h6>
-                      <span className="text-sm font-normal italic text-neutral-600">
+                      <span className="text-sm italic font-normal text-neutral-600">
                         {testy.company}
                       </span>
                     </div>
