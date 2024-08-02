@@ -10,7 +10,7 @@ const App = () => {
   return (
     <>
       <Navbar />
-      <div className="px-6 pt-20 mx-auto max-w-7xl">
+      <div className="px-6 pt-20 mx-auto overflow-hidden overflow-x-hidden max-w-7xl">
         <Hero />
         <Features />
         <Workflow />

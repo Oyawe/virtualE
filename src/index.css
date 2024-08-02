@@ -16,6 +16,43 @@
   animation: slide-top 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
 }
 
+.gradient-1 {
+  /* background: -webkit-linear-gradient(
+    to right,
+    #bdc3c7,
+    #2c3e50
+  ); Chrome 10-25, Safari 5.1-6 */
+  /* background: linear-gradient(
+    to right,
+    #bdc3c7,
+    #2c3e50
+  ); W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  /* background-image: radial-gradient(
+    circle,
+    #131313,
+    #212124,
+    #2e3037,
+    #3b404b,
+    #47515f
+  ); */
+  background-image: linear-gradient(
+    to left bottom,
+    #131313,
+    #1e1e20,
+    #28282e,
+    #32343c,
+    #3b404b,
+    #4d525d,
+    #606570,
+    #737984,
+    #9598a1,
+    #b8b9c0,
+    #dcdcdf,
+    #ffffff
+  );
+  filter: blur(300px);
+}
+
 @-webkit-keyframes slide-top {
   0% {
     -webkit-transform: translateY(100px);

@@ -11,6 +11,7 @@ const Hero = () => {
       whileInView="show"
       viewport={{ once: true, amount: 0.25 }}
     >
+      <div className="absolute w-[300px] h-[500px] md:w-[350px] lg:w-[500px] lg:h-[300px] lg:right-[800px] opacity-85 gradient-1" />
       <div className="flex flex-col items-center mt-6 lg:mt-20 ">
         <motion.h1 variants={textVariant(1.1)}>
           <h1 className="text-4xl tracking-wide text-center sm:text-6xl lg:text-7xl">
@@ -38,7 +39,7 @@ const Hero = () => {
             </a>
             <a
               href="#"
-              className="px-4 py-3 mx-3 duration-150 ease-in border rounded-md hover:border-gray-500"
+              className="p-3 duration-150 ease-in border rounded-md sm:mx-3 sm:px-4 sm:py-3 hover:border-gray-500"
             >
               Documentation
             </a>
@@ -64,16 +65,6 @@ const Hero = () => {
               <source src={video1} type="video/mp4" />
               Your browser does not support this video.
             </video>
-            {/* <img
-              src={pic11}
-              alt=""
-              className="relative object-fill w-full mx-2 my-4 border border-gray-700 rounded-lg shadow right-2 lg:w-1/2 shadow-gray-300 opacity-90"
-            />
-            <img
-              src={pic10}
-              alt=""
-              className="relative object-cover w-full mx-2 my-4 border border-gray-700 rounded-lg shadow right-2 lg:w-1/2 shadow-gray-300"
-            /> */}
           </div>
         </motion.div>
       </div>
